@@ -1,0 +1,3 @@
+gcc -c .\transformation.c -o transformation.o
+ar rcs libtransformation.a .\transformation.o
+gcc main1.c -L. -ltransformation -o main.exe
